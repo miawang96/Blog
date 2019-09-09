@@ -1,4 +1,4 @@
-# Header
+# Header,用于组件的路由跳转配置
 menu:
   Home: /
   Archives: /archives
