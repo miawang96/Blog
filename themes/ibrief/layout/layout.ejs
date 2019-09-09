@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html>
+<%- partial('_partial/head') %>
 <body>
   <div id="container">
     <div id="wrap">
       <div class="outer">
-        <section id="main"><%- body %></section>        
+        <%- partial('_partial/header', {id: 1}) %>
+        <section id="main"><%- body %></section>  
+        <%- partial('_partial/footer') %>      
       </div>
     </div>
   </div>
