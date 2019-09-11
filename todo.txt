@@ -1,2 +1,7 @@
 1.404页面实现
-2.research: UI实现
+2.research: UI实现 -> DONE
+3.页眉和页脚的实现
+4.文章页面的模板实现
+5.归档页面的模板实现
+6.关于我的页面
+7.Markdown research
