@@ -1,5 +1,5 @@
 /* sweetScroll load */
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {  
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#8baa41"
       },
       "shape": {
         "type": "polygon",
@@ -76,11 +76,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "detect_on": "window",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "grab"
+          "enable": true,
+          "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
@@ -113,5 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     "retina_detect": true
   });
+
+  document.getElementById('particles-js').setAttribute('style', 'position: fixed');
 
 }, false);
