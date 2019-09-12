@@ -3,3 +3,11 @@ blog_title: '青草怪味豆'
 
 # Footer
 slogan: 'So teach us to number our days, that we may get us a heart of wisdom.'
+
+menu:
+  home: /
+  categories: /categories
+  #about: /about
+  archives: /archives
+  tags: /tags
+  #commonweal: /404.html
