@@ -4,7 +4,8 @@
 4.文章页面的模板实现
 5.归档页面的模板实现
 6.关于我的页面
-7.Markdown research
+7.Markdown research -> DONE
+(类似于HTML语言，使用规定的标记是文字展示出不同的格式)
 8.返回顶部
 9.英文字体: Pacifico
 10.页面导航路由配置 ->  DONE
