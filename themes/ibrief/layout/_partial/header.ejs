@@ -2,14 +2,10 @@
 	<div class="header-content">
 			<div class="header-content-title"><%- theme.blog_title %></div>
 			<div class="header-content-nav">
-				<nav>
-					<ul>
-						<li>首页</li>
-						<li>归档</li>
-						<li>标签</li>
-						<li>怪味豆指南</li>
-					</ol>
-				</nav>
+					<div><a href="<%- url_for('/') %>">首页</a></div>
+					<div><a>归档</a></div>
+					<div><a>标签</a></div>
+					<div><a href="<%- url_for('/about') %>">怪味豆指南</a></div>
 			</div>
 	</div>
 </header>
