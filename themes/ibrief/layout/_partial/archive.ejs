@@ -1,0 +1,10 @@
+<% var last; %>
+<% page.posts.each(function(post, i){ %>
+	<% var year = post.date.year(); %>
+	<% if(last !== year) { %>
+		<% if(last !== null) { %>
+			<%= year %>
+			<% last = year %>
+		<% } %>
+	<% 	} %>
+<% }) %>
