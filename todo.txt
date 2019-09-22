@@ -2,7 +2,7 @@
 2.research: UI实现 -> DONE
 3.页眉和页脚的实现 -> DONE
 4.文章页面的模板实现
-5.归档页面的模板实现
+5.归档页面的模板实现 -> DONE
 6.关于我的页面 -> DONE
 7.Markdown research -> DONE
 (类似于HTML语言，使用规定的标记是文字展示出不同的格式)

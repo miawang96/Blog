@@ -1,10 +1,18 @@
-<% var last; %>
-<% page.posts.each(function(post, i){ %>
-	<% var year = post.date.year(); %>
-	<% if(last !== year) { %>
-		<% if(last !== null) { %>
-			<%= year %>
-			<% last = year %>
-		<% } %>
-	<% 	} %>
-<% }) %>
+<div class="archive">
+	<% var last; %>
+	<% page.posts.each(function(post, i){ %>
+		<% var year = post.date.year(); %>
+		<% var month = post.date.month()+1; %>
+		<% var date = post.date.date(); %>
+		<% if(last !== year) { %>
+			<% if(last !== null) { %>
+				<div class="archive-year"><%= year %></div>
+				<% last = year %>
+			<% } %>
+		<% 	} %>
+		<div class="archive-post">
+			<div class="archive-post-date"><%= month %>-<%= date %>&nbsp;|&nbsp;</div>
+			<div class="archive-title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></div>
+		</div>
+	<% }) %>
+</div>
