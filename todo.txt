@@ -6,7 +6,7 @@
 6.关于我的页面 -> DONE
 7.Markdown research -> DONE
 (类似于HTML语言，使用规定的标记是文字展示出不同的格式)
-8.返回顶部
+8.返回顶部 -> DONE
 9.英文字体: Pacifico -> DONE
 10.页面导航路由配置 ->  DONE
 (页面根据路径查找资源，部署好了的项目会在public目录下查找)
