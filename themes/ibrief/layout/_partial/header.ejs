@@ -1,11 +1,10 @@
 <header id="header">	
 	<div class="header-content">
 			<div class="header-content-title"><%- theme.blog_title %></div>
-			<div class="header-content-nav">
-					<div><a href="<%- url_for('/') %>">首页</a></div>
-					<div><a href="<%- url_for('/archives') %>">归档</a></div>
-					<div><a>标签</a></div>
-					<div><a href="<%- url_for('/about') %>">怪味豆指南</a></div>
+			<div class="header-content-nav">					
+					<% for (var i in theme.menu){ %>
+						<div><a href="<%- url_for(theme.menu[i].path) %>"><%= theme.menu[i].display %></a></div>
+					<% } %>
 			</div>
 	</div>
 </header>

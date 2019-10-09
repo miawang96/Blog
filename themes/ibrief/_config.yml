@@ -6,12 +6,18 @@ slogan: 'So teach us to number our days, that we may get us a heart of wisdom.'
 
 # Menu
 menu:
-  home: /
-  categories: /categories
-  #about: /about
-  archives: /archives
-  tags: /tags
-  #commonweal: /404.html
+  home: 
+    display: '首页'
+    path: '/'
+  about:
+    display: '怪味豆指南'
+    path: '/about'
+  tags:
+    display: '标签'
+    path: '/tags'
+  archives:
+    display: '归档'
+    path: '/archives'
 
 # Content
 author: Mia
