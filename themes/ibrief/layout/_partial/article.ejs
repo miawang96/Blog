@@ -1,12 +1,28 @@
 <article class="article">
 	<div class="article-meta">
     <header class="article-meta-title">
-      <h1><%- post.title %></h1>
+      <h2><%- post.title %></h2>
     </header>
     <div class="article-meta-detail">
-        <div>原创：<span><%= theme.author %></span></div>
-        <div>时间：<span>2019-09-24</span></div>
-        <div>收录于：<span>生活</span></div>
+        <div>
+            <i class="fa fa-paper-plane-o"></i>
+          <span><%= theme.author %></span>
+        </div>
+        <div><i class="fa fa-calendar-o"></i>
+          <span><%= post.date.year() %></span>-<span><%= post.date.month()+1 %></span>-<span><%= post.date.date() %></span>
+        </div>
+        <div>
+          <i class="fa fa-tag"></i>
+          <span>
+            <% if (post.tags && post.tags.length){ %>
+            <% var tags = [];
+                post.tags.forEach(function(tag){
+                tags.push(tag.name);
+            });%>
+            <%- tags.join('·') %>
+            <% } %>
+          </span>
+        </div>
     </div>
   </div>
   <div class="article-content">
