@@ -32,11 +32,6 @@
   </div>
   <% if (post.layout !== "hide"){ %>
     <div><%- partial('_widget/end-line') %></div>
-  <% } %>
-  <% if (post.prev) { %>
-    <%- post.prev.title %>
-  <% } %>
-  <% if (post.next) { %>
-    <%- post.next.title %>
-  <% } %>
+  <% } %> 
+  <div><%- partial('_partial/guide',{prev: post.prev, next: post.next}) %></div>
 </article>
