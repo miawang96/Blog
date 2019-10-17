@@ -1,18 +1,30 @@
 .archive
 
-  padding: 10px 180px;
+  margin: 10px 180px;
+  padding: 5px 0;
+  position: relative;
+
+  &:before
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #eee;
+    opacity: .6;
+    z-index: 1;
 
   &-year 
     font-size: 23px;
     color: #8baa41;
-    margin-bottom: 15px;
-    font-weight: bold;
+    margin:0 0 15px 10px;
+    font-weight: bold;    
 
   &-post
     font-size: 18px;
     display: flex;
     flex-direction: row;
-    margin: 10px 0 25px 40px;
+    margin: 10px 0 25px 0;
     padding-bottom: 10px;
     border-bottom: 1px dashed #aaa;
     transition-duration: .5s;
@@ -20,11 +32,15 @@
     &:hover
       border-bottom: 1px dashed black;
 
-    &-date
-      &:before
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
+    &:before
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #aaa;
+      margin-right: 5px;
+      margin-left: -1px;
+      z-index: 3;
 
     &-title
       a

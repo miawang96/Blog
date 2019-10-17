@@ -1,4 +1,5 @@
 <div class="archive">
+	<div class="archive-header">当前共有<%= page.posts.length %>篇文章</div>
 	<% var last; %>
 	<% page.posts.each(function(post, i){ %>
 		<% var year = post.date.year(); %>
