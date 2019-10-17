@@ -3,14 +3,28 @@
   padding: 10px 180px;
 
   &-year 
-    font-size: 18px;
+    font-size: 23px;
     color: #8baa41;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
 
   &-post
+    font-size: 18px;
     display: flex;
     flex-direction: row;
-    margin: 0 0 15px 15px;
+    margin: 10px 0 25px 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #aaa;
+    transition-duration: .5s;
+
+    &:hover
+      border-bottom: 1px dashed black;
+
+    &-date
+      &:before
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
 
     &-title
       a
