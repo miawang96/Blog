@@ -1,6 +1,6 @@
  /**
-   * Particle.js configuration part
-   */
+  * Particle.js configuration part
+  */
 document.addEventListener("DOMContentLoaded", function () {  
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -120,16 +120,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 }, false);
 
- /**
+(function($){
+  /**
    * Back to top animation part
    */
-(function($){
   $('#back-to-top').on('click', function() {
     $('body,html').animate({ scrollTop: 0 }, 500);
-  })  
-})(jQuery);
+  });
 
- /**
+  /**
    * Velocity.js animation configuration part.
    */
+  $(window).ready(function() {
+    $('#header').velocity("fadeIn", { duration: 1500 });
+    $('.brief-post').velocity("fadeIn", { duration: 2500 });
+  })
+
+})(jQuery);
+
+ 
+
   
