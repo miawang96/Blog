@@ -1,6 +1,11 @@
 <header id="header">	
 	<div class="header-content">
-			<div class="header-content-title"><%- theme.blog_title %></div>
+			<div class="header-content-title">
+				<div class="header-avatar">
+					<img src="/grassflavorbean.github.io/image/avatar.jpg" title="avatar"/>
+				</div>
+				<div class="header-title"><%- theme.blog_title %></div>
+			</div>
 			<div class="header-content-nav">					
 					<% for (var i in theme.menu){ %>
 						<div><a href="<%- url_for(theme.menu[i].path) %>"><%= theme.menu[i].display %></a></div>
