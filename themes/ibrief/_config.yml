@@ -9,15 +9,15 @@ menu:
   home: 
     display: '首页'
     path: '/'
-  about:
-    display: '怪味豆指南'
-    path: '/about'
-  tags:
-    display: '标签'
-    path: '/tags'
+  # tags:
+  #   display: '标签'
+  #   path: '/tags'
   archives:
     display: '归档'
     path: '/archives'
+  about:
+    display: '怪味豆指南'
+    path: '/about'
 
 # Content
 author: Mia

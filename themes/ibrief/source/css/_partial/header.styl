@@ -1,5 +1,11 @@
 @import "../_variables"
 
+@keyframes myrotate {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .header-content
   display: flex;
 
@@ -16,6 +22,7 @@
         max-width: 50px;
         max-height: 50px;
         border-radius: 50%;
+        animation: myrotate 10s linear 3;
 
     .header-title
       margin-left: 20px;
