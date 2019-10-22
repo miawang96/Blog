@@ -9,15 +9,18 @@ menu:
   home: 
     display: '首页'
     path: '/'
+    icon: 'fa fa-seedling'
   # tags:
   #   display: '标签'
   #   path: '/tags'
   archives:
     display: '归档'
     path: '/archives'
+    icon: 'fas fa-seedling'
   about:
     display: '怪味豆指南'
     path: '/about'
+    icon: 'fas fa-seedling'
 
 # Content
 author: Mia

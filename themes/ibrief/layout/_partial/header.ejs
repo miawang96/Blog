@@ -4,11 +4,16 @@
 				<div class="header-avatar">
 					<img src="/grassflavorbean.github.io/image/avatar.jpg" title="avatar"/>
 				</div>
-				<div class="header-title"><%- theme.blog_title %></div>
+				<div class="header-title">
+					<div class="header-title-upper"><%- theme.blog_title %></div>
+					<div class="header-title-bottom">生活~技术~阅读~</div>
+				</div>
 			</div>
 			<div class="header-content-nav">					
 					<% for (var i in theme.menu){ %>
-						<div><a href="<%- url_for(theme.menu[i].path) %>"><%= theme.menu[i].display %></a></div>
+						<div>
+							<i class="<%= theme.menu[i].icon %>"></i>
+							<a href="<%- url_for(theme.menu[i].path) %>"><%= theme.menu[i].display %></a></div>
 					<% } %>
 			</div>
 	</div>
