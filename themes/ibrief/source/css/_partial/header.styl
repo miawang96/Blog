@@ -33,23 +33,25 @@
         margin-top: 5px;
       
   &-nav
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     flex: 7;
+    position: relative;
 
-    div
-      font-size: 18px;
-      margin: 10px 20px;
-      text-align: center;
-      flex: 1;
-      padding-bottom: 5px;
-      border-bottom: 1px solid #fff;
-      cursor: pointer;
+    .nav-content
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-      &:hover
-        border-bottom: 1px solid #304911;
+      div
+        font-size: 18px;
+        margin: 18px 15px 0 15px;
+        text-align: center;
+        flex: 1;
+        cursor: pointer;
+        height: 45px;
+        background-image: url('/grassflavorbean.github.io/image/header.png')
+
+        a
+          color: #000;
+          text-decoration: none;      
+    
       
-      a
-        color: #000;
-        text-decoration: none;        

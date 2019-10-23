@@ -9,12 +9,14 @@
 					<div class="header-title-bottom">生活~技术~阅读~</div>
 				</div>
 			</div>
-			<div class="header-content-nav">					
+			<div class="header-content-nav">
+				<div class="nav-content">			
 					<% for (var i in theme.menu){ %>
 						<div>
 							<i class="<%= theme.menu[i].icon %>"></i>
 							<a href="<%- url_for(theme.menu[i].path) %>"><%= theme.menu[i].display %></a></div>
 					<% } %>
-			</div>
+				</div>
+				</div>
 	</div>
 </header>
